@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar hal-hal yang dilarang demi keselamatan kerja.">
+  <title>Daftar Hal-Hal yang Dilarang | Keselamatan Kerja</title>
+  <style>
+    :root {
+      --yellow: #fff000;
+      --ink: #171717;
+      --red: #ed1717;
+      --paper: #ffffff;
+      --muted: #555;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #f1f2f4;
+    }
+    .page {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: clamp(18px, 3vw, 36px);
+      background: var(--paper);
+      box-shadow: 0 8px 28px rgba(0,0,0,.10);
+    }
+    .poster {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      align-items: stretch;
+    }
+    .panel {
+      background: var(--yellow);
+      padding: 18px 16px 14px;
+      min-width: 0;
+    }
+    .heading {
+      text-align: center;
+      margin: 0 auto 12px;
+      max-width: 95%;
+      border-top: 3px double var(--ink);
+      border-bottom: 3px double var(--ink);
+      padding: 8px 4px;
+    }
+    .division {
+      display: block;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(20px, 2.5vw, 29px);
+      line-height: 1.12;
+      font-weight: 700;
+    }
+    .japanese .division { font-family: Arial, sans-serif; font-weight: 700; }
+    .japanese h1 {
+      font-family: Arial, "Noto Sans JP", sans-serif;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: clamp(25px, 3vw, 34px);
+    }
+    .rules {
+      background: #fff;
+      border: 2px solid var(--ink);
+      padding: 10px 12px 8px;
+      height: calc(100% - 86px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 12px;
+    }
+    .rule {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      align-items: center;
+      column-gap: 9px;
+      min-height: 48px;
+    }
+    .number {
+      width: 39px;
+      height: 39px;
+      border: 5px solid var(--red);
+      border-radius: 50%;
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 800;
+      position: relative;
+      background: #fff;
+    }
+    .number::after {
+      content: "";
+      position: absolute;
+      width: 43px;
+      height: 5px;
+      background: var(--red);
+      transform: rotate(48deg);
+      border-radius: 4px;
+    }
+    .rule p {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(14px, 1.55vw, 18px);
+      line-height: 1.18;
+      font-weight: 600;
+    }
+    .japanese .rule p {
+      font-family: Arial, "Noto Sans JP", sans-serif;
+      font-size: clamp(15px, 1.55vw, 19px);
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .note {
+      margin: 8px 0 0 48px;
+      color: #333;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .note strong { color: var(--red); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 18px;
+    }
+    @media (max-width: 720px) {
+      body { padding: 12px 8px; }
+      .page { padding: 12px; }
+      .poster { grid-template-columns: 1fr; gap: 12px; }
+      .panel { padding: 16px 12px 12px; }
+      .rules { height: auto; gap: 14px; padding: 12px; }
+      .rule { min-height: 44px; }
+      .rule p { font-size: 16px; }
+      .japanese .rule p { font-size: 16px; }
+    }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .page { width: 100%; box-shadow: none; padding: 10mm; }
+      .panel { break-inside: avoid; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="poster">
+      <section class="panel" aria-labelledby="title-id">
+        <header class="heading">
+          <span class="division">Divisi Bisnis Anti Getaran</span>
+          <h1 id="title-id">Daftar Hal-Hal yang Dilarang</h1>
+        </header>
+        <div class="rules">
+          <div class="rule"><span class="number">1</span><p>Jangan sentuh benda bergerak atau berputar</p></div>
+          <div class="rule"><span class="number">2</span><p>Jangan pernah menonaktifkan perangkat pengaman</p></div>
+          <div class="rule"><span class="number">3</span><p>Jangan bekerja tanpa alat pelindung yang ditentukan</p></div>
+          <div class="rule"><span class="number">4</span><p>Jangan berlari</p></div>
+          <div class="rule"><span class="number">5</span><p>Kendaraan pengangkut dan pejalan kaki harus saling berhati-hati</p></div>
+          <div class="rule"><span class="number">6</span><p>Jangan bekerja dengan pijakan yang tidak stabil atau postur yang memaksakan diri</p></div>
+          <div class="rule"><span class="number">7</span><p>Jangan masuk ke bawah benda berat</p></div>
+          <div class="rule"><span class="number">8</span><p>Jangan bekerja di tempat tinggi tanpa mengenakan sabuk pengaman</p></div>
+          <p class="note"><strong>Catatan:</strong> Bagi karyawan yang tidak mematuhi Peraturan perusahaan akan dikenakan sanksi.</p>
+        </div>
+      </section>
+
+      <section class="panel japanese" aria-labelledby="title-jp">
+        <header class="heading">
+          <span class="division">防振事業本部</span>
+          <h1 id="title-jp">べからず集</h1>
+        </header>
+        <div class="rules" lang="ja">
+          <div class="rule"><span class="number">1</span><p>動体や回転体には手を出すべからず</p></div>
+          <div class="rule"><span class="number">2</span><p>安全装置を無効化するべからず</p></div>
+          <div class="rule"><span class="number">3</span><p>決められた保護具や保護カバーなしで作業するべからず</p></div>
+          <div class="rule"><span class="number">4</span><p>走るべからず</p></div>
+          <div class="rule"><span class="number">5</span><p>運搬車両と歩行者は、互いに注意を怠るべからず</p></div>
+          <div class="rule"><span class="number">6</span><p>不安定な足場や無理な姿勢で作業するべからず</p></div>
+          <div class="rule"><span class="number">7</span><p>重量物の下に入るべからず</p></div>
+          <div class="rule"><span class="number">8</span><p>高所作業は、安全帯を着用せずに作業するべからず</p></div>
+        </div>
+      </section>
+    </div>
+    <footer>Utamakan keselamatan. Patuhi seluruh peraturan kerja yang berlaku.</footer>
+  </main>
+</body>
+</html>
